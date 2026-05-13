@@ -57,6 +57,10 @@
   --pf-outline-focus: rgb(var(--color-primary-200));
 }
 
+html:not(.dark)>body {
+  background: #FCC5D4;
+}
+
 .article-link--card>div {
   background-color: #F24088;
 }
