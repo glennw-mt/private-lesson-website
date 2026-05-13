@@ -3,6 +3,6 @@ publish = "public"
 command = "hugo --gc --minify && npx -y pagefind --site public"
 
 [build.environment]
-HUGO_VERSION = "0.141.0"
+HUGO_VERSION = "0.158.0"
 HUGO_THEME = "blowfish"
 HUGO_BASEURL = "/"
