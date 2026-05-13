@@ -1,0 +1,121 @@
+:root {
+  /* Neutral Scale - Lightness matched to Catppuccin-style reference */
+  --color-neutral: 241, 245, 254;
+  --color-neutral-50: 205, 214, 244;
+  --color-neutral-100: 186, 194, 222;
+  --color-neutral-200: 166, 173, 200;
+  --color-neutral-300: 205, 214, 244;
+  /* Matched reference redundancy */
+  --color-neutral-400: 108, 112, 134;
+  --color-neutral-500: 88, 91, 112;
+  --color-neutral-600: 69, 71, 90;
+  --color-neutral-700: 49, 50, 68;
+  --color-neutral-800: 14, 30, 73;
+  /* #0E1E49 - Exact Background Match */
+  --color-neutral-900: 7, 15, 36;
+
+  /* Primary Scale - Lightness matched to Reference Primary (Yellow/Peach) */
+  /* Using Hue 213 (your Brand Blue) */
+  --color-primary-50: 233, 241, 251;
+  --color-primary-100: 212, 228, 248;
+  --color-primary-200: 184, 211, 245;
+  --color-primary-300: 175, 206, 248;
+  --color-primary-400: 126, 172, 235;
+  --color-primary-500: 92, 146, 220;
+  --color-primary-600: 59, 120, 206;
+  --color-primary-700: 38, 86, 156;
+  --color-primary-800: 24, 54, 98;
+  --color-primary-900: 12, 27, 49;
+
+  /* Secondary Scale - Lightness matched to Reference Secondary (Sky Blue) */
+  /* Using Hue 336 (your Pink) */
+  --color-secondary-50: 253, 237, 243;
+  --color-secondary-100: 251, 208, 226;
+  --color-secondary-200: 248, 175, 207;
+  --color-secondary-300: 246, 153, 194;
+  --color-secondary-400: 244, 133, 182;
+  --color-secondary-500: 240, 93, 158;
+  --color-secondary-600: 228, 47, 128;
+  --color-secondary-700: 181, 23, 93;
+  --color-secondary-800: 126, 16, 65;
+  --color-secondary-900: 71, 9, 36;
+
+  /* UI Logic */
+  --pf-text: rgb(var(--color-neutral-50));
+  --pf-text-secondary: rgb(var(--color-neutral-200));
+  --pf-text-muted: rgb(var(--color-neutral-300));
+  --pf-background: rgb(var(--color-neutral-800));
+  --pf-border: rgb(var(--color-neutral-600));
+  --pf-border-focus: rgb(var(--color-secondary-400));
+  --pf-hover: rgb(var(--color-neutral-700));
+  --pf-skeleton: rgb(var(--color-neutral-700));
+  --pf-skeleton-shine: rgb(var(--color-neutral-600));
+  --pf-mark: rgb(var(--color-primary-300));
+  --pf-scroll-shadow: rgba(var(--color-neutral-900), 0.5);
+  --pf-modal-backdrop: rgba(var(--color-neutral-900), 0.7);
+  --pf-font: "Fira Code", monospace;
+  --pf-outline-focus: rgb(var(--color-primary-200));
+}
+
+.article-link--card>div {
+  background-color: #F24088;
+}
+
+.article-link--card>div>*,
+.article-link--card>div>*>* {
+  color: rgba(var(--color-neutral));
+}
+
+.thumbnail_card {
+  min-width: unset !important;
+}
+
+#homepage-image {
+  background-color: #093A76;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+h1 {
+  -webkit-text-stroke: 4px transparent;
+  /* -webkit-text-fill-color: rgba(var(--color-neutral-800)); */
+  background: conic-gradient(from var(--angle),
+      #093A76,
+      #813FAE,
+      #BB3FA7,
+      #F24088,
+      #093A76);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: rotate-pulse 2s linear infinite;
+}
+
+h2 {
+  padding: 2px;
+  -webkit-text-stroke: 2px transparent;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  padding: 1px;
+  -webkit-text-stroke: 1px transparent;
+}
+
+@keyframes rotate-pulse {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.pf-searchbox-input,
+.pf-searchbox-input-wrapper,
+.pf-searchbox-dropdown,
+.pf-searchbox-results {
+  border-radius: 0 !important;
+}

@@ -1,0 +1,19 @@
+[[main]]
+none = "none"
+
+[[main]]
+name = "Notes"
+pre = "pencil"
+pageRef = "notes"
+identifier = "3zyeMjphka"
+weight = 9_999
+
+[[main]]
+name = "Posts"
+pre = "envelope"
+pageRef = "posts"
+identifier = "JOPZ8l3yPu"
+weight = 9_999
+
+[[footer]]
+none = "none"
